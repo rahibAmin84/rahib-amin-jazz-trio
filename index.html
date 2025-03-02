@@ -7,32 +7,57 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Rahib Amin's Jazz Trio</h1>
-        <p>Smooth, soulful, and electrifying jazz guitar trio</p>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Rahib Amin's Jazz Trio</h1>
+            <p>Experience the Soul of Jazz Guitar</p>
+            <a href="#listen" class="btn">Listen Now</a>
+        </div>
     </header>
+
+    <nav class="navbar">
+        <a href="#about">About</a>
+        <a href="#listen">Music</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
     <section id="about">
         <h2>About Us</h2>
-        <p>Rahib Amin's Jazz Trio is a passionate and dynamic ensemble blending traditional and modern jazz influences. With years of experience performing live, we bring the spirit of jazz to every performance.</p>
+        <p>Rahib Amin's Jazz Trio blends the rich tradition of jazz guitar with contemporary rhythms and soulful melodies. Our performances are a journey through timeless jazz classics and original compositions.</p>
     </section>
 
-    <section id="music">
+    <section id="listen">
         <h2>Listen to Our Music</h2>
-        <audio controls>
-            <source src="your-music-file.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+        <div class="music-container">
+            <iframe style="border: 0; width: 100%; height: 120px;" 
+                src="https://bandcamp.com/EmbeddedPlayer/album=123456789/size=large/bgcol=333333/linkcol=ffffff/artwork=small/transparent=true/"
+                seamless></iframe>
+        </div>
+    </section>
+
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <ul class="events-list">
+            <li><strong>March 15, 2025</strong> - The Blue Note, NYC</li>
+            <li><strong>April 5, 2025</strong> - Chicago Jazz Festival</li>
+            <li><strong>May 20, 2025</strong> - San Francisco Jazz Center</li>
+        </ul>
     </section>
 
     <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Want to book us for your event? Get in touch!</p>
-        <a href="mailto:rahibaminmusic@example.com" class="button">Email Us</a>
+        <h2>Contact & Booking</h2>
+        <p>For bookings or inquiries, send us a message below:</p>
+        <form action="mailto:rahibaminmusic@example.com" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
 
     <footer>
-        <p>Follow us on social media:</p>
+        <p>Follow us:</p>
         <a href="https://facebook.com/yourband" target="_blank">Facebook</a> |
         <a href="https://instagram.com/yourband" target="_blank">Instagram</a> |
         <a href="https://youtube.com/yourband" target="_blank">YouTube</a>
