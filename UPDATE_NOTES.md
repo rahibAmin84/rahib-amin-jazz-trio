@@ -37,3 +37,8 @@ Added:
 
 Positioning note:
 - The site now presents Thoughtworks as one credible proof point among several, while keeping the main brand centered on Rahib Amin, Veritas, music, writing, and independent platform/trust thinking.
+
+
+## Final cleanup pass
+
+Removed unwanted image files, cleaned unused duplicate assets, replaced placeholder/instructional copy with public-facing language, and refreshed `PHOTO_STRATEGY.md`.
