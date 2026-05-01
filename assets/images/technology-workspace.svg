@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Verifiable trust abstract workspace placeholder</title>
+  <desc id="desc">An abstract dark technology illustration with nodes, proof lines, and a warm accent glow.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101827"/>
+      <stop offset="0.55" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#1b1408"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="35%" cy="25%" r="70%">
+      <stop offset="0" stop-color="#d8ad63" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#d8ad63" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect width="1200" height="900" fill="url(#glow)"/>
+  <g fill="none" stroke="#f6efe4" stroke-opacity="0.16" stroke-width="2">
+    <path d="M120 210h240l70 70h280l80-80h300"/>
+    <path d="M130 420h300l90-90h180l60 60h310"/>
+    <path d="M160 640h220l110-120h250l90 90h210"/>
+  </g>
+  <g fill="#d8ad63">
+    <circle cx="120" cy="210" r="10"/><circle cx="430" cy="280" r="10"/><circle cx="790" cy="200" r="10"/>
+    <circle cx="130" cy="420" r="10"/><circle cx="520" cy="330" r="10"/><circle cx="760" cy="390" r="10"/>
+    <circle cx="160" cy="640" r="10"/><circle cx="490" cy="520" r="10"/><circle cx="830" cy="610" r="10"/>
+  </g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" fill="#f6efe4" opacity="0.86">
+    <text x="120" y="755" font-size="34">policy.enforced()</text>
+    <text x="120" y="805" font-size="34">attestation.verified()</text>
+    <text x="120" y="855" font-size="34">evidence.generated()</text>
+  </g>
+</svg>
