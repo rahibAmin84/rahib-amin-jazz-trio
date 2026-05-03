@@ -78,7 +78,7 @@ p { color: var(--muted); font-size: 1.05rem; }
 .cta-section h2, .contact-panel h2 { max-width: 820px; }
 .clean-list { margin: 28px 0 0; padding: 0; list-style: none; }
 .clean-list li { padding: 18px 0; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 1.15rem; }
-.big-link { color: var(--accent); font-size: clamp(1.6rem, 4vw, 3rem); font-weight: 900; letter-spacing: -0.04em; text-decoration: none; overflow-wrap: anywhere; }
+.big-link { color: var(--text); font-size: clamp(1.6rem, 4vw, 3rem); font-weight: 900; letter-spacing: -0.04em; text-decoration: none; overflow-wrap: anywhere; }
 .big-link:hover { text-decoration: underline; }
 .small-note { font-size: 0.95rem; }
 .music-hero { background: linear-gradient(135deg, rgba(216,173,99,.08), transparent 60%); }
