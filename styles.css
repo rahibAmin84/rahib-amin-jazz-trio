@@ -340,7 +340,7 @@ font-size: 0.95rem;
 display: grid;
 grid-template-columns: minmax(0, 1.05fr) minmax(340px, 0.95fr);
 gap: 56px;
-align-items: stretch;
+align-items: center;
 }
 
 .hero-copy h1 { max-width: 780px; }
@@ -357,22 +357,19 @@ background: var(--bg-card);
 box-shadow: var(--shadow);
 }
 
-.hero-portrait {
-  min-height: 560px;
-  aspect-ratio: 4 / 5;
-  position: relative;
+.hero-portrait{
+    margin:0;
+    overflow:hidden;
+    border-radius:var(--radius);
+    border:1px solid var(--line);
+    box-shadow:var(--shadow);
 }
 
-.hero-portrait img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
+.hero-portrait img{
+    display:block;
+    width:100%;
+    height:auto;
 }
-
 .inline-photo img,
 .story-photo img,
 .proof-photo img {
@@ -587,18 +584,19 @@ h1 { font-size: clamp(2.55rem, 16vw, 4rem); }
 }
 /* Final hero portrait override */
 .hero-portrait {
-  min-height: 560px;
-  aspect-ratio: 4 / 5;
-  position: relative;
+  margin: 0;
+  height: clamp(420px, 48vw, 560px);
   overflow: hidden;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--bg-card);
+  box-shadow: var(--shadow);
 }
 
 .hero-portrait > img {
-  position: absolute !important;
-  inset: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center top !important;
-  display: block !important;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
 }
