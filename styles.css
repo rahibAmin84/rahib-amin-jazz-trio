@@ -358,34 +358,29 @@ box-shadow: var(--shadow);
 }
 
 .hero-portrait {
-min-height: 560px;
-aspect-ratio: 4 / 5;
+  min-height: 560px;
+  aspect-ratio: 4 / 5;
+  position: relative;
 }
 
-.inline-photo { min-height: 340px; }
-
-.story-photo {
-min-height: 420px;
-position: relative;
+.hero-portrait img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
 }
 
-.story-photo.tall { min-height: 620px; }
-
-.proof-photo { min-height: 420px; }
-
-.proof-photo.wide { min-height: 360px; }
-
-.featured-media { min-height: 520px; }
-
-.hero-portrait img,
 .inline-photo img,
 .story-photo img,
 .proof-photo img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-object-position: center top;
-display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
 }
 
 .story-photo figcaption {
