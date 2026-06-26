@@ -585,3 +585,20 @@ h1 { font-size: clamp(2.55rem, 16vw, 4rem); }
 
 .button { width: 100%; }
 }
+/* Final hero portrait override */
+.hero-portrait {
+  min-height: 560px;
+  aspect-ratio: 4 / 5;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-portrait > img {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+  display: block !important;
+}
