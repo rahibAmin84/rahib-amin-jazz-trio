@@ -341,22 +341,27 @@ p {
 }
 
 .hero-landscape {
-  width: min(1400px, 100vw);
-  height: clamp(360px, 42vw, 560px);
-  margin: 64px calc(50% - 50vw) 0;
-  overflow: hidden;
-  border-radius: var(--radius);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
-  background: var(--bg-card);
+    margin-top: 56px;
+    width: 100%;
+    height: 520px;
+
+    overflow: hidden;
+
+    border-radius: var(--radius);
+    border: 1px solid var(--line);
+    background: var(--bg-card);
+    box-shadow: var(--shadow);
 }
 
 .hero-landscape img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 28%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    /* We'll tune this after seeing it */
+    object-position: center 28%;
+
+    display: block;
 }
 
 .hero-reflection {
